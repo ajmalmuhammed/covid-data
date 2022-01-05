@@ -20,4 +20,9 @@ public class CovidDataController {
          StateData stateData = covidDataService.getStateSpecificData(state);
       return stateData;
     }
+
+    @GetMapping("/admin")
+    public String getAdmin(){
+        return "<h1> Hello Admin</h1>";
+    }
 }
