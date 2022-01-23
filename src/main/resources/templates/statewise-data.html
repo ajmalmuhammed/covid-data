@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Statewise data</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th th:text="${stateData.loc}">
+        </th>
+    </tr>
+    <tr>
+        <td >Confirmed cases :
+        </td>
+        <td th:text=" ${stateData.confirmedCasesIndian}">
+        </td>
+    </tr>
+    <tr>
+        <td >Confirmed foreign cases :
+        </td>
+        <td th:text=" ${stateData.confirmedCasesForeign}">
+        </td>
+    </tr>
+    <tr>
+        <td >Discharged :
+        </td>
+        <td th:text=" ${stateData.discharged}">
+        </td>
+    </tr>
+    <tr>
+        <td> Deaths :
+        </td>
+        <td th:text=" ${stateData.deaths}">
+        </td>
+    </tr>
+
+    <tr>
+        <td> Total Confirmed :
+        </td>
+        <td th:text=" ${stateData.totalConfirmed}">
+        </td>
+    </tr>
+
+</table>
+</body>
+</html>
